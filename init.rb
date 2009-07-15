@@ -1,1 +1,1 @@
-puts "hi"
+puts "now @rails_base"
