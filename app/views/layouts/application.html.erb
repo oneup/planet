@@ -216,10 +216,10 @@
           </li>
         
           <li>
-            <h3>Team</h3>
+            <h3>Start</h3>
             <ul class="links">
-              <li><a href="http://geeq.at/">oneup</a></li>
-              <li><a href="">+</a></li>
+              <li><%= link_to "start", :action => :start %></li>
+              </li>><%= link_to "trash", :action => :trash %></li>
             </ul>
           </li>
             
@@ -255,12 +255,12 @@
           
           <ol>          
             <li>
-              <h2>Use <tt>script/generate</tt> to create classes.</h2>
-              <p>80% <tt>model</tt> / <tt>controller</tt>, run without parameters for help.</p>
+              <h2>Make static <tt>erb.html</tt> be available in a static path aswell.</h2>
+              <p>Why every rails app lacks this & needs the class tree is a mystery.</p>
             </li>
-            
+
             <li>
-              <h2>Set up <tt>config/routes.rb</tt>, rm <tt>index.html</tt></h2>
+              <h2>Set up <tt>config/routes.rb</tt></h2>
               <p>Why every rails dev needs to do this tedious task is a mystery.</p>
             </li>
 
@@ -284,7 +284,7 @@
       </div>
       
       
-      <div id="footer">&nbsp;</div>
+      <div id="footer">&nbsp;               <li><a href="http://geeq.at/">oneup</a></li></div>
     </div>
   </body>
 </html>

@@ -23,6 +23,9 @@ ActionController::Routing::Routes.draw do |map|
   #     products.resources :comments
   #     products.resources :sales, :collection => { :recent => :get }
   #   end
+  
+  #why doesnt this work?
+  #map.start :controller => "scratchpad", :action => "start"
 
   # Sample resource route within a namespace:
   #   map.namespace :admin do |admin|
