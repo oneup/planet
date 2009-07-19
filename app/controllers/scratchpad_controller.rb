@@ -6,10 +6,7 @@ class ScratchpadController < ApplicationController
   def start # first landing page for new/registered users
     redirect_to :action => :tutorial
   end
-  
-  def trash
-  end
-  
+
   def tutorial
   end
 end
