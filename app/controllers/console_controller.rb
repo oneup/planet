@@ -12,8 +12,12 @@ class ConsoleController < ApplicationController
     # actually this is quite dangerous un-sandboxed,
     # on a webservice. means passwords are obsolete here.
     
-    begin
-      message = Kernel.eval(code)
+    message = begin
+      result = Kernel.eval(code)
+      m = Message.create :line => code
+      m.save!
+      
+      result
     rescue Exception => e
       "Exception " + e.to_s
     rescue SyntaxError => e
@@ -24,7 +28,7 @@ class ConsoleController < ApplicationController
       "NameError #{e}"
     end
     
-    flash[:notice] = "flash: #{params[:line]} => #{message}"
+    flash[:notice] = "#{params[:line]} => #{message}"
     
     redirect_to :action => :index
   end
