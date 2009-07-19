@@ -16,7 +16,7 @@ class PagesController < ApplicationController
     @page = Page.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { @rendered_body =  ERB.new(@page.body, 0, "%<>").result }# show.html.erb
       format.xml  { render :xml => @page }
     end
   end
