@@ -1,2 +1,4 @@
-<h1>Console#index</h1>
-<p>Find me in app/views/console/index.html.erb</p>
+<% form_tag :action => :do do -%>
+  <%= text_field_tag :line %>
+  <%= submit_tag 'Do' %>
+<% end -%>
