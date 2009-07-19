@@ -171,3 +171,13 @@ list-style-type: none;
 #sidebar ul.links li {
 margin-bottom: 5px;
 }
+
+
+
+.dings {
+	font-family: Wingdings;
+}
+
+.dings a {
+	text-decoration: none !important;
+}

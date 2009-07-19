@@ -8,18 +8,20 @@
 </li>
 
 <li>
-  <h3>Console</h3>
+  <h3>Core</h3>
   <ul class="links">
     <li><%= link_to "console", :controller => :console %></li>
+    <li><%= link_to "trash", :controller => :pages %></li>
   </ul>
 </li>
 
 
 <li>
-  <h3>Start</h3>
+  <h3>Collaboration</h3>
   <ul class="links">
     <li><a href="<%= url_for :controller => :scratchpad, :action => :tutorial -%>">tutorial</a></li>
-    <li><%= link_to "trash", :controller => :pages %></li>
+    <li><a href="/community">community</a></li>
+    <li><a href="/wiki">wiki</a> startpage</li>
   </ul>
 </li>
   
@@ -30,12 +32,3 @@
     <li><a href="http://gp2xwiz.co.uk/wiki/">Wiz Wiki</a></li>
   </ul>
 </li>
-  
-<li>
-  <h3>Collaborate</h3>
-  <ul class="links">
-    <li><a href="/communication">Community</a></li>
-    <li><a href="/wiki">Wiki</a></li>
-  </ul>
-</li>
-
